@@ -10,35 +10,89 @@
 	margin: 0 auto;
 }
 
+header {
+	width: 960px;
+	height: 160px;
+	display: flex;
+}
+
+.logo-area {
+	width: 160px;
+	height: 160px;
+	background-color: red;
+}
+
+.name-area {
+	width: 400px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+
+nav {
+	background-color: yellow;
+	width: 400px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+
+.slideshow {
+	width: 960px;
+	height: 400px;
+	background-color: blue;
+}
+
 /* Leave this alone */
-.top-content {
+.content-row-1 {
 	width: 100%;
 	display: flex;
 }
 
+.menu-area {
+	width: 100%;
+	height: 200px;
+	background-color: lightgreen;
+	padding: 30px;
+}
+
 /* Leave this alone */
-.bottom-content {
+.content-row-2 {
 	width: 100%;
 	display: flex;
 }
 
+.deals-area {
+	width: 600px;
+	height: 250px;
+	background-color: brown;
+	padding: 30px;
+}
+
+.map-area {
+	width: 360px;
+	background-color: lightpink;
+	padding: 30px;
+}
+/* Leave this alone */
+.content-row-3 {
+	width: 100%;
+	display: flex;
+}
+
+.contact-area {
+	width: 360px;
+	background-color: indigo;
+	padding: 30px;
+}
 /* Styles for the "about" section */
 .about-area {
-	width: 65%;
+	width: 600px;
 	background-color: lightblue;
 	padding: 30px;
 }
 
 /* Styles for the map area */
-.map-area {
-	width: 35%;
-	background-color: lightpink;
-	padding: 30px;
-}
+
 
 /* Styles for the menu area */
-.menu-area {
-	width: 100%;
-	background-color: lightgreen;
-	padding: 30px;
-}
