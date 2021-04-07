@@ -10,27 +10,31 @@
 <body>
 	<div class="container">
 		<header>
+			<!--Logo goes within here, verify sizing in stylesheet and adjust accordingly-->
 			<div class="logo-area">
 
 			</div>
+			<!--Title of business goes here, can be text or an image. Size can be adjusted as needed-->
 			<div class="name-area">
 				<h1>
 					Burger Queen
 				</h1>
 			</div>
+			<!--Very simple nav which links to each section of our page-->
 			<nav>
 				<a href="#">Home</a>
-				<a href="#">Deals</a>
-				<a href="#">Order</a>
-				<a href="#">Location</a>
-				<a href="#">About</a>
+				<a href="#deals">Deals</a>
+				<a href="#order">Order</a>
+				<a href="#loc">Location</a>
+				<a href="#about">About</a>
 			</nav>
 		</header>
 		<section class="slideshow">
 			<h2>slideshow</h2>
 		</section>
 		<section class="content-row-1">
-			<div class="menu-area">
+			<!--Div for the ordering area-->
+			<div id="order" class="menu-area">
 				<h1>Ordering Section</h1>
 				<p>Here we will need at least 1 drop down menu with some food items. Consider adding two or three drop down menu's.
 					1 for main items, 1 for side items and 1 for drinks.</p>
@@ -38,21 +42,25 @@
 					snippets can be found online.</p>
 			</div>
 		</section>
-		<!--Structure for the ordering area-->
 		<section class="content-row-2">
-			<div class="deals-area">
+			<!--Div for the "deals" picture, check width and height in stylesheet, adjust as needed-->
+			<div id="deals" class="deals-area">
 				<h1>deals picture goes here</h1>
 			</div>
-			<div class="map-area">
+			<!--Div for the map. This can be embedded as an iframe from google maps. 
+				Verify the height and width of the map so it fits within the div cleanly.-->
+			<div id="loc" class="map-area">
 				<h1>Our Location</h1>
 				<p>Put a google maps embedded iframe here</p>
 			</div>
 		</section>
 		<section class="content-row-3">
+			<!--Contact Info div-->
 			<div class="contact-area">
 				<h2>contact info</h2>
 			</div>
-			<div class="about-area">
+			<!--About the company div-->
+			<div id="about" class="about-area">
 				<h2>about the company</h2>
 			</div>
 		</section>
