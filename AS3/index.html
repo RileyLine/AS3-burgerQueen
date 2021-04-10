@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Burger Queen | Home</title>
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/splide.min.css">
 </head>
 <body>
 	<div class="container">
@@ -31,32 +30,7 @@
 			</nav>
 		</header>
 		<section class="slideshow">
-			<div id="image-slider" class="splide">
-				<div class="splide__track">
-					<ul class="splide__list">
-						<li class="splide__slide">
-							<img src="images/slide1.jpg">
-							<div class="sliderText">
-								<h1>Heading</h1>
-								<p>The text goes here</p>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<img src="images/slide2.jpg">
-							<div class="sliderText">
-								<h1>Heading</h1>
-								<p>The text goes here</p>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<img src="images/slide3.jpg">
-							<div class="sliderText">
-								<h1>Heading</h1>
-								<p>The text goes here</p>
-							</div>
-						</li>
-					</ul>
-				</div>
+			<h2>slideshow</h2>
 		</section>
 		<section class="content-row-1">
 			<!--Div for the ordering area-->
@@ -75,11 +49,16 @@
 			</div>
 			<!--Div for the map. This can be embedded as an iframe from google maps. 
 				Verify the height and width of the map so it fits within the div cleanly.-->
-			<div id="loc" class="map-area">
-				<h1>Our Location</h1>
-				<p>Put a google maps embedded iframe here</p>
-			</div>
-		</section>
+			<div class="map-area">
+                <h1>Our Location</h1>
+                <form action="http://maps.google.com/maps" method="get" target="_blank">
+                    <label for="saddr">Enter your location</label>
+                    <input type="text" name="saddr" />
+                    <input type="hidden" name="daddr" value="Durham College, 2000 Simcoe St N, Oshawa, ON L1G 0C5" />
+                    <input type="submit" value="Get directions" />
+                </form>
+            </div>
+        </section>
 		<section class="content-row-3">
 			<!--Contact Info div-->
 			<div class="contact-area">
@@ -92,19 +71,4 @@
 		</section>
 	</div>
 </body>
-
-<script src="js/splide.min.js"></script>
-
-<script>
-
-	document.addEventListener('DOMContentLoaded', function () {
-		new Splide('#image-slider', {
-			type: 'loop',
-			width: '960px',
-			height: '400px',
-			autoplay: true,
-		}).mount();
-	});
-</script>
-
 </html>
