@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Burger Queen | Home</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<!--Logo goes within here, verify sizing in stylesheet and adjust accordingly-->
+			<div class="logo-area">
+
+			</div>
+			<!--Title of business goes here, can be text or an image. Size can be adjusted as needed-->
+			<div class="name-area">
+				<h1>
+					Burger Queen
+				</h1>
+			</div>
+			<!--Very simple nav which links to each section of our page-->
+			<nav>
+				<a href="#">Home</a>
+				<a href="#deals">Deals</a>
+				<a href="#order">Order</a>
+				<a href="#loc">Location</a>
+				<a href="#about">About</a>
+			</nav>
+		</header>
+		<section class="slideshow">
+			<h2>slideshow</h2>
+		</section>
+		<section class="content-row-1">
+			<!--Div for the ordering area-->
+			<div id="order" class="menu-area">
+				<h1>Ordering Section</h1>
+				<select id="main" name="mainfood">
+    <option>select main meal </option>
+    <option value="AF">Chicken Fingers</option>
+    <option value="AX">Chicken Wrap</option>
+    <option value="AL">Cheese Burger</option>
+    <option value="DZ">Boneless Bites</option>
+    <option value="AS">Pizza</option>
+    <option value="AD">Ribs</option>
+  
+    
+    </select>
+    
+    <select id="sides" name="mainside">
+    <option>select side for meal </option>
+    <option value="AF">Fries</option>
+    <option value="AX">Onion Rings</option>
+    <option value="AL">Mac n Cheese</option>
+    <option value="DZ">Salad</option>
+    <option value="AS">Soup</option>
+    <option value="AD">Pasta</option>
+  
+    
+    </select>
+    
+    <select id="drink" name="maindrink">
+    <option>select drink for meal </option>
+    <option value="AF">Water</option>
+    <option value="AX">Coke</option>
+    <option value="AL">Pepsi</option>
+    <option value="DZ">Ice Tea</option>
+    <option value="AS">Ginger Ale</option>
+    <option value="AD">Mt Dew</option>
+  
+    
+    </select>
+    
+    <button class="but1" type="button">Add order to cart!</button>
+
+    
+    
+    
+
+
+			</div>
+		</section>
+		<section class="content-row-2">
+			<!--Div for the "deals" picture, check width and height in stylesheet, adjust as needed-->
+			<div id="deals" class="deals-area">
+				<h1>deals picture goes here</h1>
+			</div>
+			<!--Div for the map. This can be embedded as an iframe from google maps. 
+				Verify the height and width of the map so it fits within the div cleanly.-->
+			<div id="loc" class="map-area">
+				<h1>Our Location</h1>
+				<p>Put a google maps embedded iframe here</p>
+			</div>
+		</section>
+		<section class="content-row-3">
+			<!--Contact Info div-->
+			<div class="contact-area">
+				<h2>contact info</h2>
+			</div>
+			<!--About the company div-->
+			<div id="about" class="about-area">
+				<h2>about the company</h2>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
