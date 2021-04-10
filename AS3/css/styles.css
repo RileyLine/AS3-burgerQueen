@@ -22,7 +22,6 @@ header {
 .logo-area {
 	width: 160px;
 	height: 160px;
-	background-color: red;
 }
 
 /* Leave this for now, we will style together */
@@ -73,8 +72,6 @@ nav {
 .deals-area {
 	width: 600px;
 	height: 250px;
-	background-color: brown;
-	padding: 30px;
 }
 
 /* Kashish's section */
@@ -93,13 +90,11 @@ nav {
 /*Amanpreet's section */
 .contact-area {
 	width: 360px;
-	background-color: indigo;
 	padding: 30px;
 }
 
 /* Amanpreet's section */
 .about-area {
 	width: 600px;
-	background-color: lightblue;
 	padding: 30px;
 }
