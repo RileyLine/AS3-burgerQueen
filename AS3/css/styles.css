@@ -49,6 +49,26 @@ nav {
 	background-color: blue;
 }
 
+.splide {
+	margin: 0 auto 30px auto;
+}
+
+.splide__slide {
+	position: relative;
+}
+
+.sliderText {
+	position: absolute;
+	width: inherit;
+	height: 150px;
+	top: 250px;
+	background-color: rgba(189, 98, 56, 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 /* Leave this alone */
 .content-row-1 {
 	width: 100%;
