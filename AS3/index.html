@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Burger Queen | Home</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/splide.min.css">
 </head>
 <body>
 	<div class="container">
@@ -30,7 +31,32 @@
 			</nav>
 		</header>
 		<section class="slideshow">
-			<h2>slideshow</h2>
+			<div id="image-slider" class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<img src="images/slide1.jpg">
+							<div class="sliderText">
+								<h1>Heading</h1>
+								<p>The text goes here</p>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<img src="images/slide2.jpg">
+							<div class="sliderText">
+								<h1>Heading</h1>
+								<p>The text goes here</p>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<img src="images/slide3.jpg">
+							<div class="sliderText">
+								<h1>Heading</h1>
+								<p>The text goes here</p>
+							</div>
+						</li>
+					</ul>
+				</div>
 		</section>
 		<section class="content-row-1">
 			<!--Div for the ordering area-->
@@ -66,4 +92,19 @@
 		</section>
 	</div>
 </body>
+
+<script src="js/splide.min.js"></script>
+
+<script>
+
+	document.addEventListener('DOMContentLoaded', function () {
+		new Splide('#image-slider', {
+			type: 'loop',
+			width: '960px',
+			height: '400px',
+			autoplay: true,
+		}).mount();
+	});
+</script>
+
 </html>
